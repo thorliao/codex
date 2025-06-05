@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>精神心情管理系統</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>精神心情管理系統</h1>
+    <div id="input-area">
+        <label for="timestamp">時間：</label>
+        <input type="datetime-local" id="timestamp">
+        <br>
+        <label for="energy">精神：</label>
+        <select id="energy">
+            <option value="0">0 睡覺狀態</option>
+            <option value="1">1 昏昏欲睡</option>
+            <option value="2">2 有點想睡</option>
+            <option value="3">3 正常狀態</option>
+            <option value="4">4 精神很好</option>
+            <option value="5">5 巔峰狀態</option>
+        </select>
+        <br>
+        <label for="mood">心情：</label>
+        <select id="mood">
+            <option value="0">0 不放心上</option>
+            <option value="1">1 沒有負擔</option>
+            <option value="2">2 輕鬆自在</option>
+            <option value="3">3 一般專注</option>
+            <option value="4">4 非常專注</option>
+            <option value="5">5 極度專注</option>
+        </select>
+        <br>
+        <button id="add-btn">紀錄</button>
+    </div>
+    <canvas id="energyChart" width="400" height="200"></canvas>
+    <canvas id="moodChart" width="400" height="200"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>

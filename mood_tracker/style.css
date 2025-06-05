@@ -1,0 +1,10 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+#input-area {
+    margin-bottom: 20px;
+}
+canvas {
+    margin-top: 20px;
+}
